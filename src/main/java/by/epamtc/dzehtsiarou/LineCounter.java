@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession;
 
 public class LineCounter {
 
-    public long getLinesCount(SparkSession spark, String path) {
+    public 
         final Dataset<Row> text = spark.read().text(path);
 
         return text.count();
